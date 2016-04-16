@@ -15,4 +15,9 @@ console.log( itypeof(function(){}) ) // -> function
 console.log( itypeof(3) ) // -> number
 console.log( itypeof(null) ) // -> null
 console.log( itypeof(undefined) ) // -> undefined
+
+function Foo() {
+  this.foo = "foo"  
+}
+console.log( itypeof(new Foo) ); // -> object
 ```
