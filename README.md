@@ -21,3 +21,19 @@ function Foo() {
 }
 console.log( itypeof(new Foo) ); // -> object
 ```
+
+Please Note:
+
+The regular typeof function will give you `object` if it tests a regexp.
+
+eg.
+
+```js
+// regular typeof
+console.log( typeof /i am a regexp/ ) // -> object
+console.log( typeof(/i am a regexp/) ) // -> object
+```
+
+This is the main difference.
+
+enjoy!
