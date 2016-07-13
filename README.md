@@ -1,6 +1,15 @@
 # itypeof
 general data types for values
 
+# Interface
+```
+itypeof(value, strict)
+
+Arguments
+  value (*): The value to get the typeof.
+  strict (Boolean): strict mode that will enable getting class names.
+```
+
 #### How to use
 
 ```js
@@ -21,6 +30,10 @@ function Foo() {
   this.foo = "foo"  
 }
 console.log( itypeof(new Foo) ); // -> object
+
+//passing a strict parameter
+//will give you the class name of the object
+console.log( itypeof(new Foo, true) ); // -> Foo
 ```
 
 Please Note:

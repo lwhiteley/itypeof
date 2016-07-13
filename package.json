@@ -1,6 +1,6 @@
 {
   "name": "itypeof",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "general data types for values",
   "main": "index.js",
   "scripts": {
