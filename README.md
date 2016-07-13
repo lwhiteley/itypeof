@@ -37,3 +37,6 @@ console.log( typeof(/i am a regexp/) ) // -> object
 This is the main difference.
 
 enjoy!
+
+## Credits
+Ferron Hanse - [Blog](http://pragmatic-coding.blogspot.com/2012/09/a-better-javascript-typeof-function.html)
