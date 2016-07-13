@@ -7,12 +7,11 @@ var itypeof = function(val){
   return Object.prototype.toString.call(val).replace(/(\[|object|\s|\])/g, '').toLowerCase();
 }
 module.exports = function (val, strict) {
-  if(strict === true && itypeof(val) === 'object' ){
+  var resultType = itypeof(val);
+  if(strict === true && resultType === 'object' ){
     var result = getClassName(val);
-    if(result !== 'Object'){
-      return result;
-    }
+    if(result !== 'Object'){ return result };
     return result.toLowerCase();
   }
-  return itypeof(val);
+  return resultType;
 };
