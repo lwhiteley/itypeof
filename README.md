@@ -1,13 +1,18 @@
 # itypeof
-general data types for values
 
-# Interface
+General data types for values with the option to get class names as well in *strict* mode
+
+### Interface
 ```
 itypeof(value, strict)
 
 Arguments
   value (*): The value to get the typeof.
   strict (Boolean): strict mode that will enable getting class names.
+
+Returns
+  (string): returns type of value that was passed in (lowercased), When
+            a class name is returned it is not lowercased (so be careful).
 ```
 
 #### How to use
